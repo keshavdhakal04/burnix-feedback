@@ -147,13 +147,10 @@
   </div>
 
   <script>
-  // Simple: let FormSubmit handle everything (no thank-you UI here)
-  const form = document.getElementById('feedbackForm');
-  form.addEventListener('submit', () => {
-    // Do NOT call preventDefault — this keeps the redirect via _next working
-    console.log('Submitting Burnix feedback...');
-  });
-</script>
+    document.getElementById('feedbackForm').addEventListener('submit', function () {
+      console.log('Feedback form submitted');
+    });
+  </script>
 
 </body>
 </html>
