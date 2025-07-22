@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burnix Feedback</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Burnix App Feedback</h2>
+    <form action="https://formsubmit.co/keshavdhakal04@gmail.com" method="POST" id="feedbackForm">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://thankyou.burnix.com/">
+
+      <label>Full Name</label>
+      <input type="text" name="Full Name" required>
+
+      <label>Email Address</label>
+      <input type="email" name="Email" required>
+
+      <label>Did the macro progress circles and food breakdown chart help you understand your daily intake?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Macro Circles Help" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Macro Circles Help" value="Somewhat"> Somewhat</label>
+        <label><input type="radio" name="Macro Circles Help" value="Not really"> Not really</label>
+      </div>
+
+      <label>Were you able to log a workout in the app?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Workout Logging" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Workout Logging" value="No"> No</label>
+        <label><input type="radio" name="Workout Logging" value="Didn’t try"> Didn’t try</label>
+      </div>
+
+      <label>Did the app show your calories burned and workout summary correctly?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Calories Burned Accuracy" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Calories Burned Accuracy" value="No"> No</label>
+        <label><input type="radio" name="Calories Burned Accuracy" value="Didn’t notice"> Didn’t notice</label>
+      </div>
+
+      <label>Were you able to set and receive meal or workout reminders via notifications?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Reminders Working" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Reminders Working" value="No"> No</label>
+        <label><input type="radio" name="Reminders Working" value="Didn’t try"> Didn’t try</label>
+      </div>
+
+      <label>Did the “Change Password” feature work as expected?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Change Password" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Change Password" value="No"> No</label>
+        <label><input type="radio" name="Change Password" value="Didn’t try"> Didn’t try</label>
+      </div>
+
+      <label>Did the daily summary on the Home screen help you track progress?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Home Summary Help" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Home Summary Help" value="Somewhat"> Somewhat</label>
+        <label><input type="radio" name="Home Summary Help" value="No"> No</label>
+      </div>
+
+      <label>Was the app’s design and layout easy to understand and navigate?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="App Design Ease" value="Very easy" required> Very easy</label>
+        <label><input type="radio" name="App Design Ease" value="Average"> Average</label>
+        <label><input type="radio" name="App Design Ease" value="Confusing"> Confusing</label>
+      </div>
+
+      <label>Did you face any bugs, crashes, or unexpected errors?</label>
+      <textarea name="Bugs/Crashes" rows="3" placeholder="Optional"></textarea>
+
+      <label>How would you rate your overall experience with Burnix?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Overall Rating" value="⭐⭐⭐⭐⭐ (Excellent)" required> ⭐⭐⭐⭐⭐ (Excellent)</label>
+        <label><input type="radio" name="Overall Rating" value="⭐⭐⭐⭐ (Good)"> ⭐⭐⭐⭐ (Good)</label>
+        <label><input type="radio" name="Overall Rating" value="⭐⭐⭐ (Average)"> ⭐⭐⭐ (Average)</label>
+        <label><input type="radio" name="Overall Rating" value="⭐⭐ (Poor)"> ⭐⭐ (Poor)</label>
+        <label><input type="radio" name="Overall Rating" value="⭐ (Terrible)"> ⭐ (Terrible)</label>
+      </div>
+
+      <label>Any suggestions for improvement or features you'd like to see in the future?</label>
+      <textarea name="Suggestions" rows="3" placeholder="Optional"></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
