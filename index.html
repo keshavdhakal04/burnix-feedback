@@ -4,9 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Burnix Feedback</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #d12f2f;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .radio-group label {
+      font-weight: normal;
+    }
+    button {
+      background: #d12f2f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #b52828;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
     <h2>Burnix App Feedback</h2>
     <form action="https://formsubmit.co/keshavdhakal04@gmail.com" method="POST" id="feedbackForm">
@@ -86,6 +145,12 @@
       <button type="submit">Submit Feedback</button>
     </form>
   </div>
-  <script src="script.js"></script>
+
+  <script>
+    document.getElementById('feedbackForm').addEventListener('submit', function () {
+      console.log('Feedback form submitted');
+    });
+  </script>
+
 </body>
 </html>
