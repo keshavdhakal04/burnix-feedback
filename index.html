@@ -147,8 +147,21 @@
   </div>
 
   <script>
-    document.getElementById('feedbackForm').addEventListener('submit', function () {
-      console.log('Feedback form submitted');
+    const form = document.getElementById('feedbackForm');
+    const thanks = document.getElementById('thankYou');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+
+      try {
+        await fetch(form.action, { method: 'POST', body: fd, mode: 'no-cors' });
+        form.classList.add('hidden');
+        thanks.classList.remove('hidden');
+      } catch (err) {
+        alert('Something went wrong. Please try again.');
+        console.error(err);
+      }
     });
   </script>
 
